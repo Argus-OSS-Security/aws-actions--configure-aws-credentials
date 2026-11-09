@@ -1,7 +1,8 @@
 name: Closed Issue Message
-on:
-  issues:
-    types: [closed]
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   issues:
+#     types: [closed]
 jobs:
   auto_comment:
     permissions:

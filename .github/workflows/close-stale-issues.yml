@@ -1,11 +1,12 @@
 name: "Close Stale Issues"
 
 # Controls when the action will run.
-on:
-  workflow_dispatch:
-  schedule:
-  - cron: "0 */4 * * *"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#   - cron: "0 */4 * * *"
+# 
 jobs:
   cleanup:
     permissions:

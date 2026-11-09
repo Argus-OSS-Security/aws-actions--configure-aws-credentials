@@ -1,7 +1,8 @@
 name: Run pre-release integ tests
-on: 
-    pull_request_target:
-    workflow_dispatch:
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: 
+#     pull_request_target:
+#     workflow_dispatch:
 permissions:
     contents: read
 

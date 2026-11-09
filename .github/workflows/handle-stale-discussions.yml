@@ -1,10 +1,11 @@
 name: HandleStaleDiscussions
-on:
-  schedule:
-    - cron: '0 */4 * * *'
-  discussion_comment:
-    types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: '0 */4 * * *'
+#   discussion_comment:
+#     types: [created]
+# 
 jobs:
   handle-stale-discussions:
     name: Handle stale discussions

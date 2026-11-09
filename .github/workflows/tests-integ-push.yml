@@ -1,13 +1,14 @@
 name: Run post-release integration test
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'dist/**'  
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths:
+#       - 'dist/**'  
+#   workflow_dispatch:
+# 
 jobs:
   package_and_test:
     name: Package dist files

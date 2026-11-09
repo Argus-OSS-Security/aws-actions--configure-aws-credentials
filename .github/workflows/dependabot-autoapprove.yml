@@ -1,8 +1,9 @@
 name: Dependabot auto-approve
-on:
-  pull_request_target:
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#   workflow_dispatch:
+# 
 permissions:
   pull-requests: write
   id-token: write

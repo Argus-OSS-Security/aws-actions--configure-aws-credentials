@@ -1,13 +1,14 @@
 name: Update dist files on main branch
 
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'dist/**'
-  workflow_dispatch:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - 'dist/**'
+#   workflow_dispatch:
+# 
 jobs:
   package:
     name: Package dist files

@@ -1,7 +1,8 @@
-on:
-  pull_request_review:
-    types: submitted
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_review:
+#     types: submitted
+# 
 jobs:
   approved_pr:
     name: Automerge approved PRs
